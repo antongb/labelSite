@@ -1,0 +1,137 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+ html, body, header, footer, section, article, div,
+ strong, a, img, p, h1, h2, h3, h4, h5, time, ul, li, small,
+ form, label, input, textarea, button {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font: inherit;
+   box-sizing: inherit;
+   text-align: inherit;
+   text-decoration: inherit;
+   vertical-align: inherit;
+   color: inherit;
+   background: transparent;
+ }
+
+ body {
+   font-family: 'Montserrat', sans-serif;
+ }
+
+ html{
+   font-size: 1em;
+   line-height: 1.4;
+ }
+
+
+ .jumbotron{
+   background-image: url("/assets/intro-bg2.png");
+  //  font-size: 1em;
+   background-attachment: fixed;
+   background-size: cover;
+   color: #000;
+   display: block;
+   // z-index: -100;
+  //  color: #c9c9c9;
+   margin-bottom: 0px;
+  //  background-position: 0% 25%;
+  //  background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+  //  background-attachment: fixed;
+  //  height: 1100px;
+   min-height: 650px;
+   position: relative;
+  //  padding-top: 10%;
+  //  max-width: 100%;
+  //  width: auto\9;
+   // background-repeat: no-repeat;
+   // text-shadow: black 0.3em 0.3em 0.3em;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+  //  text-shadow: -1px 0 #eee, 0 1px #eee, 1px 0 #eee, 0 -1px #eee;
+ }
+
+
+
+ .container{
+   width: 100%;
+   bottom: 30px;
+   position: absolute;
+   left: 0px;
+ }
+
+ #containercontent{
+   width: 90%;
+   max-width: 650px;
+   margin-left: auto;
+   margin-right: auto;
+   position: relative;
+ }
+
+ .labellinks{
+  //  font-size: 1em;
+   position: relative;
+   text-align: center;
+   width: 100%;
+ }
+
+ #mc-embedded-subscribe-form{
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+ }
+
+ .email{
+   background-color: #5f5f5f;
+   font-size: 18px;
+   letter-spacing: 1px;
+   line-height: 22px;
+   text-transform: uppercase;
+   font-family: 'Montserrat', 'sans-serif';
+   border: none;
+   padding: 6px, 6px, 6px, 10px;
+   margin-top: 10px;
+   margin-bottom: 20px;
+ }
+
+ .social{
+   position: relative;
+   text-align: center;
+   width: 100%;
+ }
+
+ .button{
+   background-color: #5f5f5f;
+   border: none;
+   padding: 6px;
+   margin-top: 10px;
+   font-family: 'Montserrat', 'sans-serif';
+   margin-bottom: 12px;
+   font-size: 18px;
+   -webkit-appearance: button;
+   cursor: pointer;
+   color: #222;
+ }
