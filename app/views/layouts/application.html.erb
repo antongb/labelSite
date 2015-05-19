@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LabelSite</title>
+  <title>HoneyBae</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-
+  <div id="header-area">
+    <div class="width-clip">
+      <div class="sr-list">
+        <ul class="flat-list">
+          <li class="header-li"><a href="#">Fitness</a></li>
+          <li class="header-li"><a href="#">Cooking</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <%= yield %>
 

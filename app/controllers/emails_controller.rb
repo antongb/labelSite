@@ -6,8 +6,10 @@ class EmailsController < ApplicationController
     if @email.save
       # SignupMailer.new_user_email(@email).deliver_later
       send_mail
+      flash[:notice] = 'Thanks for registering!'
       redirect_to root_url
     else
+      flash[:notice] = 'didnt work.'
       redirect_to root_url
     end
 

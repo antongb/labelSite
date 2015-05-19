@@ -1,33 +1,40 @@
 <!-- <div class="jumbotron" id="intro"> -->
+  <div id="flash">
+    <% if flash[:notice] %>
+    <div id="notice"><%= flash[:notice] %></div>
+    <% end %>
+  </div>
+
   <div class="container">
     <!-- <h1>Some Label</h1> -->
     <div id="containercontent">
-      <div class="labellinks">
+      <img width="485px"src="assets/luluhoney.png" alt="HONEYBAE" />
+      <iframe width="465px" height="275px" src="https://www.youtube.com/embed/34rmavuTL-Q?autoplay=1&&autohide=1" frameborder="0" allowfullscreen></iframe>
+      <!-- <div class="sitelinks">
         <p>
-          <a href="#">STORE</a>
-          <a href="#">LABELHOUZ</a>
-          <a href="#">DEMOS</a>
-          <a href="#">RELEASES</a>
+          <a href="#">SOME</a>
+          <a href="#">HONEYBAE</a>
+          <a href="#">LINK</a>
+          <a href="#">STUFFS</a>
         </p>
+      </div> -->
+      <div class="social">
+        <a href="#"><img src="assets/fb.png"></a>
+        <!-- <a href="#"><img src="assets/tw.png"></a> -->
+        <a href="#"><img src="assets/ig.png"></a>
+        <!-- <a href="#"><img src="assets/sc.png"></a> -->
+        <a href="#"><img src="assets/yt.png" alt="YT"></a>
       </div>
-      <div id="mc_embed_signup">
-        <div id="mc_embed_signup_scroll">
-          <form action="/emails" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
-            <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
-            <!-- <div id="mc_embed_signup_scroll"> -->
-            <input type="email" value="" name="email[email]" class="email" id="mce-EMAIL" placeholder="email address" required>
-            <input type="submit" name="mce-EMAIL" class="button" value="SIGNUP">
-          <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Submit</a> -->
+      <div id="embed_signup">
+        <div id="embed_signup_scroll">
+          <!-- might need to change this div into form
+          havent looked at php scripts yet -->
+          <form id="embedded-subscribe-form" name="embedded-subscribe-form">
+            <input type="email" value="" name="email[email]" class="email" id="EMAIL" placeholder="EMAIL ADDRESS" required>
+            <input type="submit" name="EMAIL" class="button" value="SIGNUP">
           </form>
         </div>
       </div>
-      <div class="social">
-        <a href="#"><img src="/assets/fb.png"></a>
-        <a href="#"><img src="/assets/tw.png"></a>
-        <a href="#"><img src="/assets/ig.png"></a>
-        <a href="#"><img src="/assets/sc.png"></a>
-      </div>
     </div>
-
   </div>
-<!-- </div> -->
+  <!-- </div> -->
