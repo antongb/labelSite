@@ -52,5 +52,3 @@ group :development, :test do
   gem 'pry-rails'
   gem 'quiet_assets'
 end
-
-gem 'rails_12factor', group: :production
