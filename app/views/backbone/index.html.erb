@@ -27,9 +27,8 @@
       </div>
       <div id="embed_signup">
         <div id="embed_signup_scroll">
-          <!-- might need to change this div into form
-          havent looked at php scripts yet -->
-          <form id="embedded-subscribe-form" name="embedded-subscribe-form">
+          <form action="/emails" method="post" id="embedded-subscribe-form" name="embedded-subscribe-form">
+            <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
             <input type="email" value="" name="email[email]" class="email" id="EMAIL" placeholder="EMAIL ADDRESS" required>
             <input type="submit" name="EMAIL" class="button" value="SIGNUP">
           </form>
