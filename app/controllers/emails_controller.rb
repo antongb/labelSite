@@ -2,7 +2,7 @@ class EmailsController < ApplicationController
 
   def create
     @email = Email.new(email_params)
-    if @email.save
+    if is_valid?(@email.email) && @email.save
       # SignupMailer.new_user_email(@email).deliver_later
       # send_mail
       flash[:notice] = 'Thanks for registering!'
@@ -21,6 +21,12 @@ class EmailsController < ApplicationController
 
   def email_params
     params.require(:email).permit(:email)
+  end
+
+  def is_valid?(email)
+    valid_email_regex = /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
+    match = (email =~ valid_email_regex)
+    match == nil ? false : true
   end
 
   def send_mail

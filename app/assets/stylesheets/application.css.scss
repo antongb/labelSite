@@ -241,6 +241,7 @@
    max-width: 650px;
    margin-left: auto;
    margin-right: auto;
+  //  margin-bottom: 1em;
    position: relative;
    text-align: center;
  }
@@ -386,14 +387,6 @@
   margin-left: 0.5em;
 }
 
-// .flat-list li~li {
-//   // border-left: 1px solid #e5e500;
-//   // display: inline-block;
-//   // content: "-";
-//   // width: 1em;
-//   // margin-left: -1em;
-// }
-
 .flat-list li:before{
   content: " -";
   width: 1em;
@@ -403,16 +396,3 @@
 .flat-list li:first-child:before{
   content: none;
 }
-
-// .fa-youtube{
-//   background: #bb0000;
-//   color: #FFFFFF;
-//   padding: 0.25em 0.25em;
-//
-// }
-//
-// .circle{
-//   border-radius: 50%;
-//   margin: 0.15em;
-//   font-size: 3em;
-// }
