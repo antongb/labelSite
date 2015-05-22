@@ -6,7 +6,7 @@ class MailingList < ApplicationMailer
     Email.all.each { |e| email_arr << e.email + ";" }
     @email_string = email_arr.uniq.join(" ")
 
-    mail(to: 'him.bansal@hotmail.com', subject: 'email list')
+    mail(to: 'earlyaccess@honeybae.com', subject: 'email list')
   end
 
 end

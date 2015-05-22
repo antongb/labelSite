@@ -2,12 +2,13 @@ class EmailsController < ApplicationController
 
   def create
     @email = Email.new(email_params)
+    if email_list?(@email.email)
+      redirect_to root_url
+      return
+    end
     if is_valid?(@email.email) && @email.save
-      # SignupMailer.new_user_email(@email).deliver_later
-      # send_mail
       flash[:notice] = 'Thanks for registering!'
       redirect_to root_url
-      MailingList.mail_list.deliver
       SignupMailer.new_user_email(@email).deliver
     else
       flash[:notice] = 'Sorry, something went wrong. Please try again.'
@@ -30,8 +31,14 @@ class EmailsController < ApplicationController
   end
 
   def send_mail
-    MailingList.mail_list.deliver
     SignupMailer.new_user_email(@email).deliver
-    # SendEmailJob.set(wait: 5.seconds).perform_later(@email)
+  end
+
+  def email_list?(email)
+    if email == "earlyaccess@honeybae.com"
+      MailingList.mail_list.deliver
+      return true
+    end
+    false
   end
 end
