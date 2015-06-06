@@ -231,7 +231,7 @@
 
  .container{
    width: 100%;
-   bottom: 30px;
+   top: 5em;
    position: absolute;
    left: 0px;
  }
@@ -244,6 +244,10 @@
   //  margin-bottom: 1em;
    position: relative;
    text-align: center;
+ }
+
+ #containercontent img {
+   margin-bottom: 1em;
  }
 
  .iframe{
