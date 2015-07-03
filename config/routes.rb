@@ -4,4 +4,8 @@ Rails.application.routes.draw do
 
   resources :emails, only: [:create]
 
+  # resources :fitness
+
+  get ':action' => 'static#:action'
+
 end

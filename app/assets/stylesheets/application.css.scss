@@ -204,14 +204,16 @@
 
 
  body{
-   font-family: 'Montserrat', sans-serif;
+  //  font-family: 'Montserrat', sans-serif;
+   font-family: "Trebuchet MS", Helvetica, sans-serif;
+   color: #FFCF21;
    /*background: #373737;*/
    background: black;
    /*background-image: url("../images/flower.jpg");*/
    background-position: center;
    background-attachment: fixed;
    background-size: cover;
-   color: #000;
+  //  color: #000;
    display: block;
 
    margin-bottom: 0px;
@@ -399,4 +401,38 @@
 
 .flat-list li:first-child:before{
   content: none;
+}
+
+// * {
+//   background-color:black;
+//   color:#FFCF21;
+//   font-family: "Trebuchet MS", Helvetica, sans-serif;
+// }
+
+// a {
+//   font-size: 2em;
+//   text-decoration: none
+// }
+
+.nav li {
+  font-size: 1em;
+  display: inline;
+}
+
+.social li {
+  display: inline;
+}
+
+.trademark img {
+  border-width:10px;
+  border-color:red;
+  padding-top: 1px;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.5em;
 }
